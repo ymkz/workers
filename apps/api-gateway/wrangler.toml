@@ -1,0 +1,17 @@
+compatibility_date = "2022-10-01"
+
+name = "api-gateway"
+main = "src/index.ts"
+
+[dev]
+port = 3001
+
+[[kv_namespaces]]
+binding = "KV_CLIP_DATA"
+id = "69c6591ca6e64cf1b6f7b8e66aaf9744"         # clip-data
+preview_id = "f5295a93683f4062baa249bb196df937" # test-data
+
+[[kv_namespaces]]
+binding = "KV_NOVEL_DATA"
+id = "9d1dd8ce72d04a65808461e8f98a3bc1"         # novel-data
+preview_id = "f5295a93683f4062baa249bb196df937" # test-data

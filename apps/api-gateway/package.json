@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "api-gateway",
+  "scripts": {
+    "build": "echo 'build'",
+    "test": "echo 'test'",
+    "lint": "prettier --check .",
+    "dev": "wrangler dev --local src/index.ts"
+  },
+  "dependencies": {
+    "hono": "2.5.0"
+  }
+}

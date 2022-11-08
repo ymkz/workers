@@ -1,0 +1,15 @@
+compatibility_date = "2022-10-01"
+
+name = "useragent-updater"
+main = "src/index.ts"
+
+[triggers]
+crons = ["0 0 * * sun"]
+
+[dev]
+port = 3002
+
+[[kv_namespaces]]
+binding = "USERAGENT_DATA"
+id = "86858111cbd94792b71df055d54d622f"         # useragent-data
+preview_id = "f5295a93683f4062baa249bb196df937" # test-data

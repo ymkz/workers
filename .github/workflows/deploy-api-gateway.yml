@@ -1,0 +1,25 @@
+name: api-gateway
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'apps/api-gateway/**'
+
+permissions:
+  contents: read
+
+env:
+  CI: true
+  TZ: Asia/Tokyo
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          workingDirectory: 'apps/api-gateway'

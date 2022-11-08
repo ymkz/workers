@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "useragent-updater",
+  "scripts": {
+    "build": "echo 'build'",
+    "test": "echo 'test'",
+    "lint": "prettier --check .",
+    "dev": "wrangler dev --test-scheduled --local src/index.ts"
+  },
+  "dependencies": {
+    "hono": "2.5.0"
+  }
+}
