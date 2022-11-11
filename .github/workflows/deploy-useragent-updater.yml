@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'apps/useragent-updater/**'
+  workflow_dispatch:
 
 permissions:
   contents: read
