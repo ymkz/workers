@@ -23,6 +23,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
+      - run: npm ci
       - uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
