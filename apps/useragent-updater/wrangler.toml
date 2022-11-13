@@ -10,6 +10,6 @@ crons = ["0 0 * * sun"]
 port = 3002
 
 [[kv_namespaces]]
-binding = "USERAGENT_DATA"
+binding = "KV_USERAGENT_DATA"
 id = "86858111cbd94792b71df055d54d622f"         # useragent-data
 preview_id = "f5295a93683f4062baa249bb196df937" # test-data
