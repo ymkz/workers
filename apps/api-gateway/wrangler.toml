@@ -15,3 +15,7 @@ preview_id = "f5295a93683f4062baa249bb196df937" # test-data
 binding = "KV_NOVEL_DATA"
 id = "9d1dd8ce72d04a65808461e8f98a3bc1"         # novel-data
 preview_id = "f5295a93683f4062baa249bb196df937" # test-data
+
+[[services]]
+binding = "WK_USERAGENT_UPDATER"
+service = "useragent-updater"

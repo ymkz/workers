@@ -2,6 +2,7 @@ type Env = {
   KV_CLIP_DATA: KVNamespace;
   KV_NOVEL_DATA: KVNamespace;
   KV_USERAGENT_DATA: KVNamespace;
+  WK_USERAGENT_UPDATER: Fetcher;
 };
 
 type MetaData = {
