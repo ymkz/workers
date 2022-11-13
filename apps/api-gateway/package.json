@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "wrangler dev src/index.ts --local",
     "format": "rome format . --write",
-    "lint": "rome check ."
+    "lint": "tsc --noEmit && rome check ."
   },
   "dependencies": {
     "hono": "2.5.0"
