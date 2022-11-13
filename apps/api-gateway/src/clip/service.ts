@@ -1,27 +1,29 @@
-import { Context } from 'hono'
-import { addSchema, delSchema, imageSchema } from './schema'
+import { Context } from "hono";
+import { addSchema, delSchema, imageSchema } from "./schema";
 
 export const clipGetService = async (
-  context: Context<never, { Bindings: Env }>
+	context: Context<never, { Bindings: Env }>,
 ) => {
-  return {}
-}
+	return {};
+};
 
 export const clipAddService = async (
-  context: Context<never, { Bindings: Env }, ReturnType<typeof addSchema>>
+	context: Context<never, { Bindings: Env }, ReturnType<typeof addSchema>>,
 ) => {
-  const {} = context.req.valid()
-  return {}
-}
+	const { url } = context.req.valid();
+	return {};
+};
 
 export const clipDelService = async (
-  context: Context<never, { Bindings: Env }, ReturnType<typeof delSchema>>
+	context: Context<never, { Bindings: Env }, ReturnType<typeof delSchema>>,
 ) => {
-  return {}
-}
+	const { id } = context.req.valid();
+	return {};
+};
 
 export const clipImageService = async (
-  context: Context<'key', { Bindings: Env }, ReturnType<typeof imageSchema>>
+	context: Context<"key", { Bindings: Env }, ReturnType<typeof imageSchema>>,
 ) => {
-  return {}
-}
+	const { key } = context.req.valid();
+	return {};
+};

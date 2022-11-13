@@ -1,16 +1,13 @@
 {
   "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
-    "build": {
+    "dev": {
       "outputs": []
     },
-    "test": {
+    "format": {
       "outputs": []
     },
     "lint": {
-      "outputs": []
-    },
-    "dev": {
       "outputs": []
     }
   }

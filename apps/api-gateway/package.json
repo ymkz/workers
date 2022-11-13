@@ -2,10 +2,9 @@
   "private": true,
   "name": "api-gateway",
   "scripts": {
-    "build": "echo 'build'",
-    "test": "echo 'test'",
-    "lint": "prettier --check .",
-    "dev": "wrangler dev --local src/index.ts"
+    "dev": "wrangler dev src/index.ts --local",
+    "format": "rome format . --write",
+    "lint": "rome check ."
   },
   "dependencies": {
     "hono": "2.5.0"
