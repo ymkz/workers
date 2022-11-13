@@ -2,12 +2,18 @@ compatibility_date = "2022-10-01"
 
 name = "useragent-updater"
 main = "src/index.ts"
+workers_dev = false
 
 [triggers]
 crons = ["0 0 * * sun"]
 
 [dev]
 port = 3002
+
+[[routes]]
+custom_domain = true
+zone_name = "ymkz.app"
+pattern = "useragent.ymkz.app"
 
 [[kv_namespaces]]
 binding = "KV_USERAGENT_DATA"

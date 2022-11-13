@@ -2,9 +2,15 @@ compatibility_date = "2022-10-01"
 
 name = "api-gateway"
 main = "src/index.ts"
+workers_dev = false
 
 [dev]
 port = 3001
+
+[[routes]]
+custom_domain = true
+zone_name = "ymkz.app"
+pattern = "api.ymkz.app"
 
 [[kv_namespaces]]
 binding = "KV_CLIP_DATA"
