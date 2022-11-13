@@ -7,6 +7,6 @@
     "lint": "tsc --noEmit && rome check ."
   },
   "dependencies": {
-    "hono": "2.5.0"
+    "hono": "2.5.1"
   }
 }
