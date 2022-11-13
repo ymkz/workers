@@ -2,14 +2,14 @@ import { Validator } from 'hono'
 
 export const addSchema = (v: Validator) => ({
   url: v
-    .body('url')
+    .json('url')
     .isRequired()
     .message(`request body 'url' is required as 'string'`),
 })
 
 export const delSchema = (v: Validator) => ({
   id: v
-    .body('id')
+    .json('id')
     .isRequired()
     .message(`request body 'id' is required as 'string'`),
 })
