@@ -1,0 +1,17 @@
+compatibility_date = "2022-11-01"
+
+name = "clip-api"
+main = "src/index.ts"
+workers_dev = false
+
+[dev]
+port = 3001
+
+[[kv_namespaces]]
+binding = "kv_clip"
+id = "ef6ddb45fac643a4847ba5e6dd888a9d"         # clip
+preview_id = "adf3c5007b954bc189c1f0909bbea0ac" # test
+
+[[services]]
+binding = "ua_manager"
+service = "ua-manager"

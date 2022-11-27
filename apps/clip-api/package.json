@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "clip-api",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "format": "rome format . --write",
+    "lint": "tsc --noEmit && rome check ."
+  },
+  "dependencies": {
+    "@machikado-network/kuiper": "0.2.1",
+    "hono": "2.5.4"
+  },
+  "devDependencies": {
+    "@types/workers": "*"
+  }
+}

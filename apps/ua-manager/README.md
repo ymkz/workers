@@ -1,4 +1,4 @@
-# useragent-updater
+# ua-manager
 
 ```sh
 # add UserAgent

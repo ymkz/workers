@@ -1,0 +1,16 @@
+compatibility_date = "2022-11-01"
+
+name = "ua-manager"
+main = "src/index.ts"
+workers_dev = false
+
+[dev]
+port = 3002
+
+[[kv_namespaces]]
+binding = "kv_ua"
+id = "b0dd6f302f354f2f8d7c30b18c4be0fa"         # ua
+preview_id = "adf3c5007b954bc189c1f0909bbea0ac" # test
+
+[triggers]
+crons = ["0 0 * * sun"]
