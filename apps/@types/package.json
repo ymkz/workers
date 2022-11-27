@@ -3,7 +3,7 @@
   "name": "@types/workers",
   "types": "src/index.d.ts",
   "scripts": {
-    "format": "rome format . --write",
-    "lint": "tsc --noEmit && rome check ."
+    "format": "prettier --write .",
+    "lint": "tsc --noEmit && prettier --check ."
   }
 }

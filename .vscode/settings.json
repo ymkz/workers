@@ -12,9 +12,6 @@
   "search.exclude": {
     "**/package-lock.json": true
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "rome.rome"
-  },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   }
