@@ -7,7 +7,7 @@
     "lint": "tsc --noEmit && prettier --check ."
   },
   "dependencies": {
-    "hono": "2.5.6"
+    "hono": "2.5.7"
   },
   "devDependencies": {
     "@types/workers": "*"
