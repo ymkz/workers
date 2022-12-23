@@ -3,6 +3,8 @@ compatibility_date = "2022-12-23"
 name = "clip-web"
 workers_dev = false
 
+main = ".cloudflare/worker.js"
+
 [site]
 bucket = ".cloudflare/public"
 
