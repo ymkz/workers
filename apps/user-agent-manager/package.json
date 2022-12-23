@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "user-agent-manager",
+  "scripts": {
+    "build": "esbuild --bundle --format=esm --outfile=./dist/main.mjs ./src/main.ts",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  }
+}

@@ -1,0 +1,24 @@
+compatibility_date = "2022-12-23"
+
+name = "user-agent-manager"
+workers_dev = false
+
+[triggers]
+crons = ["0 0 * * sun"]
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "modules"
+dir = "./dist"
+main = "./main.mjs"
+
+[[kv_namespaces]]
+binding = "userAgentData"
+id = "abcb544c4581464e8bf70ca00e4efb43" # user-agent
+
+[miniflare]
+host = "api.localhost"
+port = 3000
+routes = [{ pattern = "api.localhost:3000/user-agent-manager" }]

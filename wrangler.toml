@@ -1,0 +1,13 @@
+compatibility_date = "2022-12-23"
+
+[miniflare]
+host = "localhost"
+port = 3000
+
+[miniflare.mounts]
+clip-web = "./apps/clip-web"
+clip-api-get = "./apps/clip-api-get"
+clip-api-add = "./apps/clip-api-add"
+clip-api-del = "./apps/clip-api-del"
+clip-image-get = "./apps/clip-image-get"
+user-agent-manager = "./apps/user-agent-manager"
