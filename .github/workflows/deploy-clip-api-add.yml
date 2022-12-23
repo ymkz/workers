@@ -1,11 +1,11 @@
-name: deploy-user-agent-manager
+name: deploy-clip-api-add
 
 on:
   push:
     branches:
       - main
     paths:
-      - apps/user-agent-manager/**
+      - apps/clip-api-add/**
   workflow_dispatch:
 
 permissions:
@@ -28,4 +28,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          workingDirectory: apps/user-agent-manager
+          workingDirectory: apps/clip-api-add
