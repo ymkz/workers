@@ -29,3 +29,5 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           workingDirectory: apps/clip-web
+          # miniflareでの動作のため必要だが、デプロイ時に不要な記述を削除する
+          preCommands: sed -i '16,17d' wrangler.toml
