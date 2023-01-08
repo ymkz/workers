@@ -13,8 +13,8 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20221111.1",
-    "esbuild": "0.16.12",
-    "prettier": "2.8.1",
+    "esbuild": "0.16.15",
+    "prettier": "2.8.2",
     "typescript": "4.9.4",
     "wrangler": "2.6.2"
   }
