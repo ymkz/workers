@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "dev": "miniflare --watch --debug",
+    "dev": "miniflare --watch --live-reload",
+    "dev:debug": "miniflare --watch --live-reload --debug",
     "lint": "npm run lint --workspaces --if-present",
     "format": "npm run format --workspaces --if-present"
   },
